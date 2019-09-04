@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <title>FEC Demo</title>
+  </head>
+  <body>
+    <div id="Info"></div>
+    <div id="CountDown"></div>
+    <div id="Related"></div>
+    <div id="Reviews"></div>
+<!-- These two lines are just one way to get the React library running in the client's browser -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- <script src="http://localhost:3001/app.js"></script> -->
+    <!-- <script src="http://localhost:3002/app.js"></script> -->
+    <script src="http://localhost:3003/bundle.js"></script>
+    <!-- <script src="http://localhost:3004/app.js"></script> -->
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+      // ReactDOM.render(
+      //   React.createElement(Info),
+      //   document.getElementById('Info')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(CountDown),
+      //   document.getElementById('CountDown')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(Related),
+      //   document.getElementById('Related')
+      // );
+      console.log(Reviews);
+      ReactDOM.render(
+        React.createElement(Reviews.default),
+        document.getElementById('Reviews')
+      );
+    </script>
+  </body>
+</html>
